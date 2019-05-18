@@ -1,6 +1,7 @@
 import React from 'react';
 import tiger from './tiger.jpg';
 import werewolf from './werewolf.jpg';
+import mermaid from './mermaid.jpg';
 import './App.css';
 // import ml5.js
 import * as ml5 from 'ml5';
@@ -60,7 +61,7 @@ class App extends React.Component<IAppProps, IAppState> {
         probability = Math.floor(probability * 10000) / 100 + '%';
         return (
           <div key={i}>
-            {i.toString()}. Prediction: {className} at {probability}{' '}
+            {(i + 1).toString()}. Prediction: {className} at {probability}{' '}
           </div>
         );
       });
@@ -69,7 +70,7 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <div className='App'>
         <h1>Image classification for all you bitch ass hoes</h1>
-        <img src={tiger} id='image' width='400' alt='' />
+        <img src={werewolf} id='image' width='400' alt='' />
         {predictions}
       </div>
     );
