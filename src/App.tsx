@@ -5,6 +5,7 @@ import mermaid from './mermaid.jpg';
 import './App.css';
 // import ml5.js
 import * as ml5 from 'ml5';
+import * as cocoSsd from '@tensorflow-models/coco-ssd';
 
 interface IAppState {}
 
@@ -20,6 +21,15 @@ class App extends React.Component<IAppProps, IAppState> {
     this.setState({
       predictions: pred,
     });
+  };
+
+  webcamImage = () => {
+    const image: any = document.getElementById('image');
+
+    cocoSsd
+      .load()
+      .then((model) => model.detect(image))
+      .then((predictions) => console.log(predictions));
   };
 
   classifyImg = () => {

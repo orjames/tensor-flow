@@ -1260,6 +1260,11 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
+"@tensorflow-models/coco-ssd@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tensorflow-models/coco-ssd/-/coco-ssd-1.0.2.tgz#8b755ff7cf6c0baf2bf94a545f60780e3fab0e3e"
+  integrity sha512-WeD6cxSFac99hdf/JzzDYd4dvJVANfwfm5q2XLbCU5UNVC0Sn7eLjq9c+vPu44N9MMESD+v0QgeVEuEv6eTrwA==
+
 "@tensorflow-models/knn-classifier@0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@tensorflow-models/knn-classifier/-/knn-classifier-0.2.2.tgz#a46d70af9a5dd130143dfec4c2316dcb17bb414b"
